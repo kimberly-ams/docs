@@ -24,7 +24,8 @@
             "pages": [
               "Connections/microsoft-365-email",
               "Connections/sharepoint-connection",
-              "Connections/outlook-addin"
+              "Connections/outlook-addin",
+              "Connections/sharepoint-connection"
             ]
           },
           {
