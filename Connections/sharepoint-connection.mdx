@@ -1,8 +1,90 @@
 ---
-title: 'How to connect your Sharepoint?'
-description: 'Connect your SharePoint to Ravical'
+title: "How to connect your Sharepoint?"
+description: "Connect your SharePoint to Ravical to seamlessly integrate your existing documentation, files, and resources directly into your workflow. "
 ---
 
-# How to connect your Sharepoint?
+This integration gives your AI agents instant access to **SharePoint** content, enabling them to provide more accurate and contextual responses based on your organization's knowledge base.
 
-Guide for connecting SharePoint to Ravical.
+<Info>
+  This guide walks you through the complete setup process, from initial connection to final configuration. The entire process typically takes **3-5 minutes**.
+</Info>
+
+### Prerequisites
+
+- Admin or appropriate permissions to grant access to SharePoint sites in your Microsoft 365 environment
+
+<Steps>
+  <Step title="Initiate the Connection">
+    1. Log in to your Ravical Dashboard
+    2. Navigate to **Connections** in the left sidebar
+    3. Locate the **SharePoint** tile in the integrations list
+    4. Click **Connect** to begin the setup
+
+    A setup wizard will open, guiding you through five steps to complete the integration.
+
+    ![1 Share Point Pn](/images/1.SharePoint.png)
+  </Step>
+  <Step title="Request Access Token">
+    In this step, we will authenticate with Microsoft Graph API, which allows Ravical to securely access your SharePoint sites and retrieve the data needed for AI-powered responses.
+
+    1. Review the permissions that will be requested:
+       - **Read SharePoint sites and lists**: Access to your SharePoint content
+       - **Access user profile information**: Retrieve user details for context
+       - **Read organization directory**: Access organizational structure information
+    2. Click **Authenticate** to proceed
+    3. You'll be redirected to Microsoft's login page
+    4. Sign in with your Microsoft 365 admin credentials
+    5. Review and accept the permissions when prompted
+    6. You'll be redirected back to the Ravical Dashboard
+
+    Once authentication is successful, the wizard will automatically move to the next step.
+
+    ![2 Authenticate Access Token Pn](/images/2.AuthenticateAccessToken.png)
+  </Step>
+  <Step title="Select SharePoint Sites">
+    Decide which SharePoint sites you want to make available to Ravical. Only the sites you select will be accessible to your AI agents.
+
+    1. The wizard will display all available SharePoint sites in your organization (left column)
+    2. Use the search bar to quickly find specific sites if needed
+    3. Select the sites you want to connect:
+       - Click on individual sites to move them to the "Selected Sites" column (right side)
+       - Or click **Select All** to add all available sites at once
+    4. Review your selections in the "Selected Sites" column
+    5. To remove sites, click on them in the selected column or use **Deselect All**
+    6. Click **Continue** once you've made your selections
+
+    ![3 Select Sites Pn](/images/3.SelectSites.png)
+  </Step>
+  <Step title="Grant Permissions">
+    This step ensures that Ravical can securely access the content from your chosen SharePoint sites.
+
+    1. Review the list of sites that are ready to grant permissions
+    2. The wizard displays each selected site with its status "Ready to grant permissions"
+    3. Verify that the correct sites are listed (you selected these in the previous step)
+    4. Click **Grant permissions to [X] sites** (where X is the number of selected sites)
+    5. The system will process the permission grants for all selected sites
+
+    ![4 Grant Permissions Pn](/images/4.GrantPermissions.png)
+  </Step>
+  <Step title="Cleanup Resources">
+    The system automatically removes temporary access credentials and cleans up any resources that were created during the setup process, ensuring your connection is secure and optimized.
+
+    1. Review the cleanup information displayed on screen
+    2. The wizard explains that this will:
+       - Remove the Ravical enterprise application from your Microsoft Entra ID tenant
+       - Clear any temporary credentials granted during the integration setup
+    3. Click **Start Cleanup** to begin the process
+    4. Wait for the cleanup to complete (usually takes a few seconds)
+
+    ![5 Cleanup Resources Pn](/images/5.CleanupResources.png)
+  </Step>
+  <Step title="Setup Complete">
+    our SharePoint integration is now fully configured and active. Your AI agents can now access content from the connected SharePoint sites.
+
+    ![6 Setup Complete Pn](/images/6.SetupComplete.png)
+  </Step>
+</Steps>
+
+## What's Next?
+
+After completing the setup, your AI agents will automatically have access to content from the connected SharePoint sites. They can reference documents, files, and information stored in these sites when responding to queries.
