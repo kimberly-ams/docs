@@ -33,7 +33,8 @@
             "pages": [
               "InboxAgent/inbox_what",
               "InboxAgent/quickstart",
-              "InboxAgent/Inbox_how"
+              "InboxAgent/Inbox_how",
+              "InbowAgent/self-learning-ai"
             ]
           },
           {
