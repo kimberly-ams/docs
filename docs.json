@@ -23,8 +23,8 @@
             "group": "Connections",
             "pages": [
               "Connections/microsoft-365-email",
-              "Connections/sharepoint-connection",
               "Connections/outlook-addin",
+              "Connections/sharepoint-connection",
               "Connections/monkey-connection"
             ]
           },
@@ -34,7 +34,7 @@
               "InboxAgent/inbox_what",
               "InboxAgent/quickstart",
               "InboxAgent/Inbox_how",
-              "InbowAgent/self-learning-ai"
+              "InboxAgent/self-learning-ai"
             ]
           },
           {
