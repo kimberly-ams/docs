@@ -32,9 +32,7 @@
           {
             "group": "Inbox Agent",
             "pages": [
-              "essentials/microsoft-365-email",
-              "essentials/sharepoint-connection",
-              "essentials/outlook-addin"
+              "InboxAgent/quickstart"
             ]
           },
           {
