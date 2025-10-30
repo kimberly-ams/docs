@@ -22,9 +22,9 @@
           {
             "group": "Connections",
             "pages": [
-              "essentials/microsoft-365-email",
-              "essentials/sharepoint-connection",
-              "essentials/outlook-addin"
+              "Connections/microsoft-365-email",
+              "Connections/sharepoint-connection",
+              "Connections/outlook-addin"
             ]
           },
           {
@@ -38,7 +38,7 @@
           {
             "group": "Security",
             "pages": [
-              "essentials/security"
+              "Connections/security"
             ]
           }
         ]
