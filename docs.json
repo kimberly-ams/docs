@@ -32,7 +32,9 @@
           {
             "group": "Inbox Agent",
             "pages": [
-              "InboxAgent/quickstart"
+              "InboxAgent/inbox_what",
+              "InboxAgent/quickstart",
+              "InboxAgent/Inbox_how"
             ]
           },
           {
