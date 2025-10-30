@@ -1,0 +1,67 @@
+---
+title: "How to Connect MonKEY?"
+description: "Integrating Wolters Kluwer monKEY with Ravical allows your agents to access and utilize monKEY data directly within the Ravical platform. This guide walks you through the connection process."
+---
+
+<Steps>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the **monKEY (Wolters Kluwer)** tile in the integrations list
+    4. Click **Connect** to begin the setup process
+
+    ![1 Mon KEY Pn](/images/1.monKEY.png)
+  </Step>
+  <Step title="Choose Your Authentication Type">
+    A connection modal will appear with two authentication options. Select the method that matches your organization's setup:
+
+    **Option A: Standard Authentication**
+
+    - Use this if you log in to monKEY with a regular username and password
+    - Best for organizations not using Microsoft Single Sign-On
+
+    **Option B: Microsoft SSO**
+
+    - Use this if your organization uses Microsoft for authentication
+    - Best for organizations with Microsoft 365 integration
+
+    Select your preferred authentication type from the dropdown menu.
+
+    ![2 SS Oor O Auth Pn](/images/2.SSOorOAuth.png)
+  </Step>
+  <Step title="Enter Your Credentials">
+    **For Standard Authentication:**
+
+    1. Enter your monKEY email address in the email field
+    2. Enter your monKEY password in the password field
+
+    **For Microsoft SSO:**
+
+    1. Enter your Microsoft account email address
+    2. Enter your Microsoft account password
+    3. You may be redirected to Microsoft's login page to complete authentication
+  </Step>
+  <Step title="Add Two-Factor Authentication (Optional but Recommended)">
+    If your monKEY account uses two-factor authentication (2FA), you'll need to provide your TOTP secret:
+
+    1. Click on **Add Two-Factor Authentication (TOTP)** to expand the section
+    2. In the field that appears, enter the TOTP secret from your authenticator app
+
+    **Tips for finding your TOTP secret:**
+
+    - Look for "Secret Key" or "Manual Entry" in your authenticator app
+    - The secret is usually a long string of letters and numbers
+    - This is optional - leave empty if you're not using 2FA
+
+    To hide this section, click **Hide Two-Factor Authentication (TOTP)**.
+
+    ![4 MFA Pn](/images/4.MFA.png)
+  </Step>
+  <Step title="Complete the Connection">
+    1. Review all the information you've entered
+    2. Click **Connect** to establish the connection
+    3. If successful, the monKEY tile will update to show a connected status
+
+    If the connection fails, double-check your credentials and try again. You can click **Cancel** at any time to close the modal without connecting.
+  </Step>
+</Steps>
