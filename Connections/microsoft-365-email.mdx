@@ -1,11 +1,7 @@
 ---
-title: "How to configure Microsoft 365 Email Access?"
+title: "How to configure Microsoft 365 Email and Outlook Access?"
 description: "Configure Microsoft 365 email access for Ravical"
 ---
-
-# How to configure Microsoft 365 Email and Calendar Access?
-
-Connecting your Microsoft 365 environment to Ravical requires admin permissions and happens through a multi-step onboarding process. Here's how to complete the setup:
 
 ## Prerequisites
 
@@ -15,13 +11,13 @@ Connecting your Microsoft 365 environment to Ravical requires admin permissions 
 ## Step-by-Step Guide
 
 <Steps>
-  <Step title="Step 0: Initiate the Microsoft 365 Setup" iconType="regular" stepNumber={0}>
+  <Step title="Initiate the Microsoft 365 Setup" iconType="regular" stepNumber={0}>
     1. Log in to your Ravical Dashboard
     2. Click **🚀 Onboarding** in the sidebar to initiate the MS365 setup process
 
     ![1 Select Onboarding Wizard Pn](/images/1.SelectOnboardingWizard.png)
   </Step>
-  <Step title="Step 1: Grant Microsoft Graph Access">
+  <Step title="Grant Microsoft Graph Access" stepNumber={1}>
     In this step we will grant permissions for Ravical to access Microsoft Graph, which allows the application to interact with your Microsoft 365 environment.
 
     1. Click **Grant Permissions**
@@ -38,7 +34,7 @@ Connecting your Microsoft 365 environment to Ravical requires admin permissions 
 
     ![2 Grant Permissiontoaccess Microsoft Graph Pn](/images/2.GrantPermissiontoaccessMicrosoftGraph.png)
   </Step>
-  <Step title="Step 2: Accept Application Consent">
+  <Step title="Accept Application Consent" stepNumber={2}>
     In this step we will provide consent to application permissions that allow Ravical's backend to connect to your mailboxes and retrieve necessary tenant information.
 
     1. Click **Continue** to proceed.
@@ -46,7 +42,7 @@ Connecting your Microsoft 365 environment to Ravical requires admin permissions 
 
     ![5 Application Consent Pn](/images/5.ApplicationConsent.png)
   </Step>
-  <Step title="Step 3: Grant Exchange Online Access">
+  <Step title="Grant Exchange Online Access" stepNumber={3}>
     In this step we will grant permissions to Exchange Online, enabling Ravical to access and manage mailboxes in a secure way.
 
     1. Click **Grant Permissions**
@@ -56,7 +52,7 @@ Connecting your Microsoft 365 environment to Ravical requires admin permissions 
 
     ![6 Exchange Online Access Pn](/images/6.ExchangeOnlineAccess.png)
   </Step>
-  <Step title="Step 4: Configure Exchange Online Resources">
+  <Step title="Configure Exchange Online Resources" stepNumber={4}>
     In this step Ravical will automatically set up the necessary resources in Exchange Online, including security groups and role assignments, so the application can access mailboxes securely.
 
     1. Click **Continue** to start the resource creation process
@@ -68,12 +64,12 @@ Connecting your Microsoft 365 environment to Ravical requires admin permissions 
 
     ![7 Exchange Online Setup Pn](/images/7.ExchangeOnlineSetup.png)
   </Step>
-  <Step title="Step 5: Add Members to Security Groups">
+  <Step title="Add Members to Security Groups" stepNumber={5}>
     Once the resources are created, you'll see the completion screen with all the details of what was set up. To finalize the onboarding, you need to add members to the **ravical-mail-read** and **ravical-mail-readwrite** security groups in your Microsoft Entra Admin Center.
 
     For detailed instructions on how to add members to these security groups, please refer to our guide:
   </Step>
-  <Step title="Step 6: Verify Completion">
+  <Step title="Verify Completion" stepNumber={6}>
     1. All five steps should now show green checkmarks
     2. The onboarding completion screen displays:
        - Service Principal details (Object ID and App ID)
