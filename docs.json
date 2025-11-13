@@ -24,9 +24,7 @@
             "pages": [
               "TechnicalOnboarding/technical-onboarding-overview",
               "TechnicalOnboarding/outlook-addin",
-              "TechnicalOnboarding/microsoft-365-email"
-            ],
-            "groups": [
+              "TechnicalOnboarding/microsoft-365-email",
               {
                 "group": "Connections",
                 "pages": [
@@ -35,7 +33,7 @@
                   "TechnicalOnboarding/yuki-connection",
                   "TechnicalOnboarding/adminpulse-connection",
                   "TechnicalOnboarding/alure-connection"
-                ]
+                  ]
               }
             ]
           },
