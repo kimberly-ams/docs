@@ -22,10 +22,13 @@
           {
             "group": "Connections",
             "pages": [
-              "Connections/microsoft-365-email",
-              "Connections/outlook-addin",
-              "Connections/sharepoint-connection",
-              "Connections/monkey-connection"
+              "TechnicalOnboarding/microsoft-365-email",
+              "TechnicalOnboarding/outlook-addin",
+              "TechnicalOnboarding/sharepoint-connection",
+              "TechnicalOnboarding/monkey-connection",
+              "TechnicalOnboarding/yuki-connection",
+              "TechnicalOnboarding/adminpulse-connection",
+              "TechnicalOnboarding/alure-connection"
             ]
           },
           {
