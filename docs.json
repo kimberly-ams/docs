@@ -16,8 +16,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "gettingstarted/welcome",
-              "gettingstarted/quickstart"
+              "gettingstarted/welcome"
             ]
           },
           {
@@ -44,8 +43,8 @@
           {
             "group": "Inbox Agent",
             "pages": [
+              "inboxagent/inbox_quickstart",
               "inboxagent/inbox_what",
-              "inboxagent/quickstart",
               "inboxagent/Inbox_how",
               "inboxagent/inbox_sources",
               "inboxagent/inbox_toneofvoice",
