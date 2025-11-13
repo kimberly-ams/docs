@@ -12,15 +12,15 @@
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "dropdowns": [
           {
-            "group": "Getting started",
+            "dropdown": "Getting started",
             "pages": [
               "gettingstarted/welcome"
             ]
           },
           {
-            "group": "Technical Onboarding",
+            "dropdown": "Technical Onboarding",
             "pages": [
               "technicalonboarding/technical-onboarding-overview",
               "technicalonboarding/outlook-addin",
@@ -31,7 +31,7 @@
             ]
           },
           {
-            "group": "Connections",
+            "dropdown": "Connections",
             "pages": [
               "connections/sharepoint-connection",
               "connections/monkey-connection",
@@ -41,7 +41,7 @@
             ]  
           },
           {
-            "group": "Inbox Agent",
+            "dropdown": "Inbox Agent",
             "pages": [
               "inboxagent/inbox_quickstart",
               "inboxagent/inbox_what",
@@ -55,7 +55,7 @@
             ]
           },
           {
-            "group": "Security",
+            "dropdown": "Security",
             "pages": [
               "connections/security"
             ]
