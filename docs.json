@@ -96,18 +96,6 @@
       "href": "https://ravical.com/#form"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
   "footer": {
     "socials": {
       "linkedin": "https://www.linkedin.com/company/ravical"
