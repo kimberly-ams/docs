@@ -24,18 +24,18 @@
             "pages": [
               "TechnicalOnboarding/technical-onboarding-overview",
               "TechnicalOnboarding/outlook-addin",
-              "TechnicalOnboarding/microsoft-365-email",
-              {
-                "group": "Connections",
-                "pages": [
-                  "TechnicalOnboarding/sharepoint-connection",
-                  "TechnicalOnboarding/monkey-connection",
-                  "TechnicalOnboarding/yuki-connection",
-                  "TechnicalOnboarding/adminpulse-connection",
-                  "TechnicalOnboarding/alure-connection"
-                  ]
-              }
+              "TechnicalOnboarding/microsoft-365-email"
             ]
+          },
+          {
+            "group": "Connections",
+            "pages": [
+              "TechnicalOnboarding/sharepoint-connection",
+              "TechnicalOnboarding/monkey-connection",
+              "TechnicalOnboarding/yuki-connection",
+              "TechnicalOnboarding/adminpulse-connection",
+              "TechnicalOnboarding/alure-connection"
+            ]  
           },
           {
             "group": "Inbox Agent",
