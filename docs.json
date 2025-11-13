@@ -16,40 +16,49 @@
           {
             "group": "Getting started",
             "pages": [
-              "index"
+              "gettingstarted/welcome",
+              "gettingstarted/quickstart"
             ]
           },
           {
             "group": "Technical Onboarding",
             "pages": [
-              "TechnicalOnboarding/technical-onboarding-overview",
-              "TechnicalOnboarding/outlook-addin",
-              "TechnicalOnboarding/microsoft-365-email"
+              "technicalonboarding/technical-onboarding-overview",
+              "technicalonboarding/outlook-addin",
+              "technicalonboarding/microsoft-365-email",
+              "technicalonboarding/extrausers",
+              "technicalonboarding/whitelisteddomains",
+              "technicalonboarding/troubleshooting"
             ]
           },
           {
             "group": "Connections",
             "pages": [
-              "TechnicalOnboarding/sharepoint-connection",
-              "TechnicalOnboarding/monkey-connection",
-              "TechnicalOnboarding/yuki-connection",
-              "TechnicalOnboarding/adminpulse-connection",
-              "TechnicalOnboarding/alure-connection"
+              "connections/sharepoint-connection",
+              "connections/monkey-connection",
+              "connections/yuki-connection",
+              "connections/adminpulse-connection",
+              "connections/alure-connection"
             ]  
           },
           {
             "group": "Inbox Agent",
             "pages": [
-              "InboxAgent/inbox_what",
-              "InboxAgent/quickstart",
-              "InboxAgent/Inbox_how",
-              "InboxAgent/self-learning-ai"
+              "inboxagent/inbox_what",
+              "inboxagent/quickstart",
+              "inboxagent/Inbox_how",
+              "inboxagent/inbox_sources",
+              "inboxagent/inbox_toneofvoice",
+              "inboxagent/inbox_learning",
+              "inboxagent/inbox_triage",
+              "inboxagent/inbox_otherai",
+              "inboxagent/inbox_chatgpt_copilot"
             ]
           },
           {
             "group": "Security",
             "pages": [
-              "Connections/security"
+              "connections/security"
             ]
           }
         ]
