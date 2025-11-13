@@ -1,0 +1,57 @@
+---
+title: "Adding Users to Security Groups"
+description: "A critical step in setting up your MS365 environment for Ravical is adding users to the created security groups. This controls which users' mailboxes Ravical can access and what level of access is granted."
+---
+
+### Prerequisites
+
+Make sure that all steps provided in below article are completed before proceeding. 
+
+https://ravical.mintlify.app/technicalonboarding/microsoft-365-email 
+
+<Info>
+  The security groups **ravical-mail-read** and **ravical-mail-readwrite** should already exist in your Microsoft tenant.
+</Info>
+
+![8 Done Pn](/images/8.Done.png)
+
+## Adding Members to Security Groups
+
+### Step 1: Navigate to Groups in Microsoft Entra Admin Center
+
+1. Go to the [Microsoft Entra Admin Center](https://entra.microsoft.com/)
+2. Navigate to **Groups \> All Groups**
+3. Search for "ravical" to find the Ravical security groups
+4. You should see two groups:
+   - **ravical-mail-read** (read-only access)
+   - **ravical-mail-readwrite** (read and write access)
+
+![1 Security Groups Ravical Pn](/images/1.SecurityGroupsRavical.png)
+
+### Step 2: Add Members to ravical-mail-read
+
+1. Select the **ravical-mail-read** security group
+2. Click on **Members** in the left sidebar
+3. Click **Add members** at the top of the page
+4. Search for and select the users who need read access to their mailboxes
+5. Click **Select** to add them to the group
+
+**Who to add:** Most users in your organization who should have their emails accessible by Ravical. You can manually exclude specific users if needed.
+
+### Step 3: Add Members to ravical-mail-readwrite
+
+1. Select the **ravical-mail-readwrite** security group
+2. Click on **Members** in the left sidebar
+3. Click **Add members** at the top of the page
+4. Search for and select the users who need read and write access
+5. Click **Select** to add them to the group
+
+**Who to add:** Only designated testers or users who need Ravical to have write access to their mailboxes. This should be a much smaller group than ravical-mail-read.
+
+![2 Security Groups Add Member Pn](/images/2.SecurityGroupsAddMember.png)
+
+<Warning>
+  **Important Note: **
+
+  Scoped access through nested groups is not supported by Exchange. You must add users as direct members to these security groups. Adding entire groups as members will not work correctly.
+</Warning>
