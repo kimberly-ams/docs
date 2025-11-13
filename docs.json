@@ -50,8 +50,7 @@
               "inboxagent/inbox_toneofvoice",
               "inboxagent/inbox_learning",
               "inboxagent/inbox_triage",
-              "inboxagent/inbox_otherai",
-              "inboxagent/inbox_chatgpt_copilot"
+              "inboxagent/inbox_otherai"
             ]
           },
           {
