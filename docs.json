@@ -45,7 +45,7 @@
             "pages": [
               "inboxagent/inbox_quickstart",
               "inboxagent/inbox_what",
-              "inboxagent/Inbox_how",
+              "inboxagent/inbox_how",
               "inboxagent/inbox_sources",
               "inboxagent/inbox_toneofvoice",
               "inboxagent/inbox_learning",
