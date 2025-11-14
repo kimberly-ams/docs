@@ -15,6 +15,7 @@
         "groups": [
           {
             "group": "Getting started",
+            "icon": "rocket",
             "pages": [
               "gettingstarted/welcome"
             ]
