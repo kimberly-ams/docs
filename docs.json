@@ -45,10 +45,10 @@
               {
                 "group": "Connections: Tools",
                 "pages": [
-                  "connections/sharepoint-connection",
-                  "connections/yuki-connection",
-                  "connections/adminpulse-connection",
-                  "connections/alure-connection"
+                  "connections/adminpulse",
+                  "connections/alure",
+                  "connections/sharepoint",
+                  "connections/yuki"
                 ]
               }
             ]
