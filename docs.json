@@ -23,16 +23,24 @@
             "group": "Technical Onboarding",
             "pages": [
               "technicalonboarding/technical-onboarding-overview",
-                {
+              {
                 "group": "Microsoft 365 Access",
                 "pages": [
                   "technicalonboarding/microsoft-365-email",
                   "technicalonboarding/securitygroups",
                   "technicalonboarding/outlook-addin"
-                          ]
-                },
+                ]
+              },
+              "technicalonboarding/extrausers",
+              "technicalonboarding/whitelisteddomains",
+              "technicalonboarding/troubleshooting"
+            ]
+          },
+          {
+            "group": "Tool Connections",
+            "pages": [
               "connections/connections-general",
-               {
+              {
                 "group": "Connections: Tools",
                 "pages": [
                   "connections/sharepoint-connection",
@@ -40,11 +48,8 @@
                   "connections/yuki-connection",
                   "connections/adminpulse-connection",
                   "connections/alure-connection"
-                          ]
-                },
-              "technicalonboarding/extrausers",
-              "technicalonboarding/whitelisteddomains",
-              "technicalonboarding/troubleshooting"
+                ]
+              }
             ]
           },
           {
