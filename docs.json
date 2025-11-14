@@ -15,13 +15,14 @@
         "groups": [
           {
             "group": "Getting started",
-            "icon": "lucide/rocket",
+            "icon": "rocket",
             "pages": [
               "gettingstarted/welcome"
             ]
           },
           {
             "group": "Technical Onboarding",
+            "icon": "gear",
             "pages": [
               "technicalonboarding/technical-onboarding-overview",
               {
@@ -39,6 +40,7 @@
           },
           {
             "group": "Tool Connections",
+            "icon": "link",
             "pages": [
               "connections/connections-general",
               {
@@ -55,6 +57,7 @@
           },
           {
             "group": "Inbox Agent",
+            "icon": "inbox",
             "pages": [
               "inboxagent/inbox_quickstart",
               "inboxagent/inbox_what",
@@ -68,6 +71,7 @@
           },
           {
             "group": "Security",
+            "icon": "schield-check",
             "pages": [
               "technicalonboarding/security"
             ]
