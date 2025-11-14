@@ -26,25 +26,26 @@
                 {
                 "group": "Microsoft 365 Access",
                 "pages": [
-                  "technicalonboarding/outlook-addin",
                   "technicalonboarding/microsoft-365-email",
-                  "technicalonboarding/securitygroups"
-                      ]
+                  "technicalonboarding/securitygroups",
+                  "technicalonboarding/outlook-addin"
+                          ]
+                },
+              "connections/connections-general",
+               {
+                "group": "Connections: Tools",
+                "pages": [
+                  "connections/sharepoint-connection",
+                  "connections/monkey-connection",
+                  "connections/yuki-connection",
+                  "connections/adminpulse-connection",
+                  "connections/alure-connection"
+                          ]
                 },
               "technicalonboarding/extrausers",
               "technicalonboarding/whitelisteddomains",
               "technicalonboarding/troubleshooting"
             ]
-          },
-          {
-            "group": "Connections",
-            "pages": [
-              "connections/sharepoint-connection",
-              "connections/monkey-connection",
-              "connections/yuki-connection",
-              "connections/adminpulse-connection",
-              "connections/alure-connection"
-            ]  
           },
           {
             "group": "Inbox Agent",
