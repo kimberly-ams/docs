@@ -23,9 +23,14 @@
             "group": "Technical Onboarding",
             "pages": [
               "technicalonboarding/technical-onboarding-overview",
-              "technicalonboarding/outlook-addin",
-              "technicalonboarding/microsoft-365-email",
-              "technicalonboarding/securitygroups",
+                {
+                "group": "Microsoft 365 Access",
+                "pages": [
+                  "technicalonboarding/outlook-addin",
+                  "technicalonboarding/microsoft-365-email",
+                  "technicalonboarding/securitygroups"
+                      ]
+                },
               "technicalonboarding/extrausers",
               "technicalonboarding/whitelisteddomains",
               "technicalonboarding/troubleshooting"
