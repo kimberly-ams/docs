@@ -71,7 +71,7 @@
           },
           {
             "group": "Security",
-            "icon": "schield-check",
+            "icon": "shield-check",
             "pages": [
               "technicalonboarding/security"
             ]
