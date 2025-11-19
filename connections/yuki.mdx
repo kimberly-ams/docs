@@ -1,8 +1,7 @@
 ---
 title: "Yuki"
+description: "Yuki is a Visma cloud accounting platform designed for accountants and entrepreneurs in the Netherlands, Belgium, and Spain to automate bookkeeping and financial administration. By connecting Yuki to Ravical, the Inbox Agent can access client financial data, documents, and real-time accounting information stored in Yuki to draft more accurate and contextual email responses. This article guides you through setting up the connection."
 ---
-
-With the Yuki connection in Ravical, our AI agent can provide real-time insights into revenue, costs, and profitability when needed. By connecting Yuki, the agent can answer your questions and assist you without requiring manual data entry. This article guides you step-by-step through setting up the connection using an API key.
 
 ### Step-by-Step Guide
 
@@ -23,7 +22,12 @@ With the Yuki connection in Ravical, our AI agent can provide real-time insights
     3. Locate the Yuki tile in the integrations list
     4. Click **Connect** to begin the setup process
 
-    ![Screenshot2025 11 13at08 54 52 Pn](/images/Screenshot2025-11-13at08.54.52.png)
+    <img
+      src="/Yuki"
+      alt="Yuk"
+      title="Yuk"
+      style={{ width:"58%" }}
+    />
   </Step>
   <Step title="Connect with API Key">
     1. Paste the API key you created earlier into the input field
@@ -32,7 +36,30 @@ With the Yuki connection in Ravical, our AI agent can provide real-time insights
   </Step>
 </Steps>
 
-### **Connection not working?**
+### Blocklisting Specific Administrations
+
+Do you have administrations in your Yuki environment that should not be accessible to the Agent? We can blocklist specific administrations to prevent the agent from accessing or sharing their details.
+
+<img
+  src="/yuki-blocklist1"
+  alt="Yuki Blocklist"
+  title="Yuki Blocklist"
+  style={{ width:"57%" }}
+/>
+
+To set up a blocklist, share the administration IDs with your Customer Value Manager. Ravical will configure the blocklist for you.
+
+**How to find administration IDs:**
+
+1. Navigate to 'Settings' in Yuki.
+2. Select 'Administrations'.
+3. Open each administration you want to blocklist.
+4. Copy the ID from the URL of the opened page.
+5. Repeat this process for every administration you want to blocklist.
+
+![Yuki Blocklis](/Yuki-Blocklist)
+
+### Connection not working?
 
 Check if:
 

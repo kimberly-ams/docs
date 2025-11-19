@@ -1,4 +1,55 @@
 ---
 title: "Silverfin"
-description: "Description of your new file."
+description: "Silverfin is a cloud-based accounting platform designed specifically for accountants and accounting firms to automate compliance work, streamline workflows, and deliver advisory services. By connecting Silverfin to Ravical, the Inbox Agent can access client financial data, reports, and workpapers stored in Silverfin to draft more accurate and contextual email responses. This article guides you through setting up the connection."
 ---
+
+## Step-by-Step Guide
+
+<Steps>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the **Silverfin** tile in the integrations list
+    4. Click **Connect** to begin the setup process
+
+    <img
+      src="/Silverfin"
+      alt="Silverfi"
+      title="Silverfi"
+      style={{ width:"66%" }}
+    />
+  </Step>
+  <Step title="Authenticate with Silverfin">
+    You will be forwarded to Silverfin where you need to authenticate using **administrator credentials**. This grants Ravical access to retrieve relevant information from your Silverfin environment.
+
+    Once authenticated, the connection is established and Ravical can start accessing information from Silverfin.
+  </Step>
+</Steps>
+
+## Scoped Access (Optional)
+
+### What Is Scoped Access?
+
+By default, when you connect Silverfin, the administrator's credentials are used to access data across your entire Silverfin tenant. **Scoped access** provides more granular control by allowing each individual Ravical user to authenticate separately with their own Silverfin credentials.
+
+This means:
+
+- Each user only accesses the Silverfin data they have permission to see
+- The Inbox Agent respects the same data permissions that exist in Silverfin
+- Better security and compliance with least-privilege access principles
+
+### How to Set Up Scoped Access
+
+Scoped access requires a three-step process:
+
+<Steps>
+  <Step title="Administrator Connects Silverfin">
+    First, an administrator must connect Silverfin through the Ravical Dashboard using the standard connection steps above. This establishes the initial connection.
+  </Step>
+  <Step title="Enable Scoped Access Support">
+    Contact your **Ravical Customer Value Manager** to enable scoped access for your organization. This is a one-time configuration change on Ravical's side.
+  </Step>
+  <Step title="Individual User Authentication">
+    Once scoped access is enabled, each Ravical user will be prompted to authenticate with their own Silverfin credentials the first time they use the Inbox Agent. This ensures they only access data they're authorized to see.
+  </Step>
+</Steps>
