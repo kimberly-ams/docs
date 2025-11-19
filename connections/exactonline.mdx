@@ -1,5 +1,58 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "ExactOnline"
+description: "Exact Online is an accounting software package used by businesses across Belgium and the Netherlands. By connecting Exact Online to Ravical, the Inbox Agent can access financial data, client information, and accounting records to draft accurate and contextual email responses based on your clients' actual financial situations. This article guides you through setting up the connection."
 ---
 
+<Warning>
+  **Supported regions:** Exact Online BE (Belgium) and Exact Online NL (Netherlands)
+</Warning>
+
+## Step-by-Step Guide
+
+<Steps>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the **Exact Online** tile in the integrations list
+    4. Click **Connect** to begin the setup process
+  </Step>
+  <Step title="Select Your Region">
+    Choose your Exact Online region:
+
+    - **BE** for Belgium
+    - **NL** for the Netherlands
+  </Step>
+  <Step title="Authenticate with Exact Online">
+    You will be forwarded to Exact Online where you need to authenticate using **administrator credentials**. This grants Ravical access to retrieve relevant information from your Exact Online environment.
+
+    Once authenticated, the connection is established and Ravical can start accessing information from Exact Online.
+  </Step>
+</Steps>
+
+## Scoped Access (Optional)
+
+### What Is Scoped Access?
+
+By default, when you connect Exact Online, the administrator's credentials are used to access data across your entire Exact Online tenant. **Scoped access** provides more granular control by allowing each individual Ravical user to authenticate separately with their own Exact Online credentials.
+
+This means:
+
+- Each user only accesses the Exact Online data they have permission to see
+- The Inbox Agent respects the same data permissions that exist in Exact Online
+- Better security and compliance with least-privilege access principles
+
+### How to Set Up Scoped Access
+
+Scoped access requires a three-step process:
+
+<Steps>
+  <Step title="Administrator Connects Exact Online">
+    First, an administrator must connect Exact Online through the Ravical Dashboard using the standard connection steps above. This establishes the initial connection.
+  </Step>
+  <Step title="Enable Scoped Access Support">
+    Contact your **Ravical Customer Value Manager** to enable scoped access for your organization. This is a one-time configuration change on Ravical's side.
+  </Step>
+  <Step title="Individual User Authentication">
+    Once scoped access is enabled, each Ravical user will be prompted to authenticate with their own Exact Online credentials the first time they use the Inbox Agent. This ensures they only access data they're authorized to see.
+  </Step>
+</Steps>
