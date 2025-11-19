@@ -45,9 +45,19 @@
               {
                 "group": "Connections: Tools",
                 "pages": [
+                  "connections/accountview",
+                  "connections/adminconsult",
+                  "connections/adsolut",
                   "connections/adminpulse",
                   "connections/alure",
+                  "connections/brio",
+                  "connections/brokercloud",
+                  "connections/exactonline",
+                  "connections/expertm",
+                  "connections/kbo",
                   "connections/sharepoint",
+                  "connections/silverfin",
+                  "connections/xero",
                   "connections/yuki"
                 ]
               }
