@@ -2,3 +2,79 @@
 title: "Admin-Consult"
 description: "Admin-Consult is an AdminPulse office management solution designed specifically for accountants, bookkeepers, and auditors in Belgium and the Netherlands to streamline their practice operations. By connecting Admin-Consult to Ravical, the Inbox Agent can access client dossiers, task information, and documents stored in Admin-Consult to draft more accurate and contextual email responses. This article guides you through setting up the connection."
 ---
+
+To integrate AdminConsult with Ravical, you'll need to create an API user in AdminConsult and grant the necessary permissions. Follow these steps:
+
+### Step-by-Step Guide
+
+<Steps>
+  <Step title="Create an API User and Key in AdminConsult">
+    Follow AdminConsult's official guide to activate and configure the API: [API Activation and Configuration Guide](https://syneton.zendesk.com/hc/nl/articles/360015107099-API-activatie-en-configuratie)
+
+    ![ACAPIK Pn](/images/ACAPIK.png)
+
+    <Tip>
+      **TIP:** When creating your API user,
+
+      - Give it a recognizable name (e.g., "Ravical")
+      - Save the generated API key, you'll need it for the connection in Ravical
+    </Tip>
+  </Step>
+  <Step title="Grant Read Access to Required Modules">
+    In the AdminConsult API configuration, enable **read access** (left column) for the following modules:
+
+    1. Permanent Dossier
+    2. Financial
+    3. Taskflow
+    4. DMS
+    5. Registraties
+    6. HRM
+
+    <Tip>
+      **Important:** Only read access is required. Write access (right column) should remain disabled.
+    </Tip>
+  </Step>
+  <Step title="Note Your Connection Details">
+    You'll need two pieces of information:
+
+    - **API Key:** The unique key generated when you created the API user
+    - **Base URL:** Your API endpoint address (see the [AdminConsult documentation](https://syneton.zendesk.com/hc/nl/articles/360015107099-API-activatie-en-configuratie#h_01EEA50ZVEP1MVTGHHH76DE51H) for how to find this)
+
+    <img
+      src="/images/ACBaseURL.png"
+      alt="AC Base URL Pn"
+      title="AC Base URL Pn"
+      style={{ width:"97%" }}
+    />
+
+    <Warning>
+      **Important:** change **"http"** to **"https"** in the URL when setting up the connection in Ravical.
+    </Warning>
+  </Step>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the AdminConsult tile in the integrations list
+    4. Click **Connect** to begin the setup process
+
+    <img
+      src="/images/AdminConsult.png"
+      alt="Admin Consult Pn"
+      title="Admin Consult Pn"
+      style={{ width:"62%" }}
+    />
+  </Step>
+  <Step title="Connect with Base URL and API Key">
+    1. Paste the Base URL and API key you created earlier into the input fields
+    2. Click **Connect with API Key**
+    3. The connection will now be established and Ravical will start gathering relevant information from AdminConsult
+
+    <Warning>
+      **Important:** change **"http"** to **"https"** in the URL when setting up the connection in Ravical.
+    </Warning>
+  </Step>
+</Steps>
+
+<Check>
+  The integration is now successfully added and will be automatically used by Ravical AI agents when needed.
+</Check>
