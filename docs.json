@@ -11,9 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Welcome",
         "pages": [
-          "gettingstarted/welcome"
+          "gettingstarted/welcome",
+          "gettingstarted/faq"
         ]
       },
       {
