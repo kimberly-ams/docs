@@ -47,8 +47,9 @@
                 "pages": [
                   "connections/accountview",
                   "connections/adminconsult",
-                  "connections/adsolut",
                   "connections/adminpulse",
+                  "connections/adsolut",
+                  "connections/afas",
                   "connections/alure",
                   "connections/brio",
                   "connections/brokercloud",
@@ -57,6 +58,7 @@
                   "connections/kbo",
                   "connections/sharepoint",
                   "connections/silverfin",
+                  "connections/taxwin",
                   "connections/xero",
                   "connections/yuki"
                 ]

@@ -2,3 +2,98 @@
 title: "ExpertM"
 description: "Expert/M is a comprehensive accounting software solution within the Wolters Kluwer Adsolut Suite, designed specifically for accountants and entrepreneurs in Belgium to manage all aspects of financial administration. By connecting Expert/M to Ravical, the Inbox Agent can access client financial data, accounting records, and documents stored in Expert/M to draft more accurate and contextual email responses. This article guides you through setting up the connection."
 ---
+
+## Step-by-Step Guide
+
+### 1. Connect Expert/M with MyAdsolut
+
+Follow the steps in this Expert/M help article to connect your Expert/M license in MyAdsolut: https://wktaaeu.my.site.com/customers/articles/nl_BE/Knowledge/Hoe-kan-ik-mijn-Expert-M-activeren-op-My-Adsolut-com-voor-het-gebruik-met-de-public-API
+
+### 2. Create Adsolut Integration
+
+In this step we will create a new Adsolut integration for the Expert/M setup. You can do this step yourself or request help from either Ravical or your Adsolut support contact.
+
+<Steps>
+  <Step title="Login to Adsolut">
+    Go to https://my.adsolut.com and authenticate with your administration login credentials.
+  </Step>
+  <Step title="Open Integrations">
+    Go to **Settings** and click the **Integration** tile.
+  </Step>
+  <Step title="Set up a New Application for Ravical">
+    Click **New application** on the **Adsolut API Connectivity** tile. Enter a name for the application (We will use `Ravical-demo` ) in this manual. The adsolut integration is now created but still needs to be configured.
+  </Step>
+</Steps>
+
+### 2. Configure Adsolut Integration
+
+Start by clicking **<u>Configure integration</u>** on your application’s tile. Next we will:
+
+1. Select the administrations which this integration can access.
+2. Select the administrator (only one) whose credentials will be requested and used for all requests for this integration.
+3. Fill in the technical details and store the client configuration in a safe place.
+
+<Steps>
+  <Step title="Administrations">
+    Click **'+ Select administrations'** and select the administrations that should be available to Ravical. Confirm by clicking the blue confirmation button in the bottom corner.
+  </Step>
+  <Step title="Authorizations">
+    Next, add the administrator on the **"Authorizations"** tab and add a new authorized administrator. Select the designated administrator and confirm the selection.
+  </Step>
+  <Step title="Technical Details">
+    Lastly, create a new secret by clicking the **"Generate new Secret"** button in the Technical Details tab.
+
+    <Tip>
+      Store the **client id** and **client secret** somewhere safe. You’ll need these in a later step.
+    </Tip>
+    Enter the following redirect URI: `https://dashboard.prod.ravical.com/integrations/oauth`
+
+    Enter the following post logout URI:
+
+    `https://dashboard.prod.ravical.com`
+
+    Click **Select Scopes** and select the following scopes:
+
+    - WK.BE.Accounting
+    - WK.BE.Accounting.Read
+
+    Click the `Save` button. The integration should now be succesfully configured to be added to your Ravical account.
+  </Step>
+</Steps>
+
+### 3. Connect to Ravical
+
+<Steps>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the **Expert/M** tile in the integrations list
+    4. Click **Connect** to begin the setup process
+
+    <img
+      src="/images/ExpertM.png"
+      alt="Expert M Pn"
+      title="Expert M Pn"
+      style={{ width:"67%" }}
+    />
+  </Step>
+  <Step title="Initialize Expert/M">
+    Fill in the **client id** and **client secret** your stored previously. Click **Initialize Expert/M**.
+  </Step>
+  <Step title="Authenticate Expert/M">
+    Now we must still authenticate the connection. Click the **Authenticate** button on the enabled Expert/M connection card. You’ll be redirected to the Adsolut login page and you’ll be asked for your consent.
+
+    <Warning>
+      You must login with **the same user** that was selected as the administrator user for the Adsolut integration.
+    </Warning>
+  </Step>
+  <Step title="Approve Connection">
+    Expert/M will show a list of permissions that you need to approve in order for the connection to be made.
+
+    When you click **'Yes, approve'** you will be redirected back to the Ravical Connections page and the Expert/M connection should no longer prompt you to authenticate.
+  </Step>
+</Steps>
+
+<Check>
+  The integration is now successfully added and will be automatically used by Ravical AI agents when needed.
+</Check>

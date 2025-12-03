@@ -2,3 +2,51 @@
 title: "AdminPulse"
 description: "AdminPulse is an online office management software solution designed specifically for accountants, bookkeepers, and auditors in Belgium and the Netherlands to streamline their practice operations. By connecting AdminPulse to Ravical, the Inbox Agent can access client dossiers, task management data, and documents stored in AdminPulse to draft more accurate and contextual email responses. This article guides you through setting up the connection."
 ---
+
+## Step-by-Step Guide
+
+<Steps>
+  <Step title="Navigate to Connections">
+    1. Log in to your Ravical Dashboard
+    2. Click on **Connections** in the left sidebar
+    3. Locate the **AdminPulse** tile in the integrations list
+    4. Click **Connect** to begin the setup process
+
+    <img
+      src="/images/AdminPulse.png"
+      alt="Admin Pulse Pn"
+      title="Admin Pulse Pn"
+      style={{ width:"69%" }}
+    />
+  </Step>
+  <Step title="Choose your Authentication Method">
+    **A. OAuth**
+
+    You will be forwarded to AdminPulse where you need to authenticate using **administrator credentials**. Next, Ravical will request permission to AdminPulse access to retrieve relevant information from the AdminPumlse environment when necessary.
+
+    <img
+      src="/images/AdminPulseOAuth.png"
+      alt="Admin Pulse O Auth Pn"
+      title="Admin Pulse O Auth Pn"
+      style={{ width:"71%" }}
+    />
+
+    Click **"Yes, allow"** and your AdminPulse instance will now be connected.
+
+    **B. API Key**
+
+    1. Create an API Key on AdminPulse by following these steps: https://adminpulse.zendesk.com/hc/nl-be/articles/8331100368924-AdminPulse-API
+    2. Copy the API Key and post that key in the Ravical API Key field.
+
+    <img
+      src="/images/AdminPulseAPIK.png"
+      alt="Admin Pulse APIK Pn"
+      title="Admin Pulse APIK Pn"
+      style={{ width:"70%" }}
+    />
+  </Step>
+</Steps>
+
+<Check>
+  The integration is now successfully added and will be automatically used by Ravical AI agents when needed.
+</Check>

@@ -1,0 +1,84 @@
+---
+title: "AFAS Profit"
+description: "AFAS is an ERP software solution designed for businesses in Belgium, the Netherlands, and the Caribbean to automate administrative processes including finance, HR, and payroll management. By connecting AFAS to Ravical, the Inbox Agent can access client financial data, employee information, and business documents stored in AFAS to draft more accurate and contextual email responses. This article guides you through setting up the connection."
+---
+
+To integrate AFAS Profit with Ravical, you need to create an App connector in AFAS Profit and then complete the connection in Ravical.
+
+## Step-by-Step Guide
+
+<Steps>
+  <Step title="Create a New App Connector in AFAS Profit">
+    In AFAS Profit, navigate to **Algemeen \> Beheer \> App connector**
+
+    ![AFAS1 Pn](/images/AFAS1.png)
+
+    Click **"Nieuw"** (New)
+
+    ![AFAS2 Pn](/images/AFAS2.png)
+
+    Enter the following information:
+
+    - **Omschrijving:** Ravical
+    - **Authenticatietype:** OAuth
+    - **Gebruikersgroep:** Select the user group that should have access to Ravical. Only users in this group will be able to use the Ravical integration
+    - **OAuth:**
+      - **Type OAuth flow:** Code
+      - **Redirect URL:** `https://dashboard.prod.ravical.com/integrations/oauth`
+
+    ![AFAS3 Pn](/images/AFAS3.png)
+
+    Click **"Volgende"** (Next)
+  </Step>
+  <Step title="Import Ravical GetConnectors">
+    On the next screen, click the **"Import"** button. Import the **GetConnectors** file provided by Ravical.
+
+    <Warning>
+      Reach out to your **Customer Value mananager** to receive the most recent file to import.
+    </Warning>
+    ![AFAS5 Pn](/images/AFAS5.png)
+
+    The Ravical integration does not use UpdateConnectors, so click **"Volgende"** (Next) again
+  </Step>
+  <Step title="Save Authentication Credentials">
+    You'll now see the Client Secret screen.
+
+    <Warning>
+      **Important:** Save both the Client ID and Client Secret in a secure location. You'll need these to complete the connection in Ravical.
+    </Warning>
+    ![AFAS6 Pn](/images/AFAS6.png)
+
+    Click **"Voltooien"** (Complete)
+  </Step>
+  <Step title="Connect AFAS Profit in Ravical">
+    1. Go to the Ravical dashboard
+    2. Add a new connection
+    3. Click **"Connect"** on the AFAS Profit tile
+    4. Enter the following information:
+       - **AFAS omgevingsnummer** (Environment number)
+       - **Client ID** (from Step 3)
+       - **Client Secret** (from Step 3)
+    5. Click **"Initialize AFAS Profit"** to create the connection
+
+    <img
+      src="/images/Screenshot2025-12-03at15.33.34.png"
+      alt="Screenshot2025 12 03at15 33 34 Pn"
+      title="Screenshot2025 12 03at15 33 34 Pn"
+      style={{ width:"67%" }}
+    />
+  </Step>
+  <Step title="Authenticate the Connection">
+    Click **"Authenticate"** on your new AFAS Profit connection to complete the integration.
+
+    <img
+      src="/images/Screenshot2025-12-03at15.34.12.png"
+      alt="Screenshot2025 12 03at15 34 12 Pn"
+      title="Screenshot2025 12 03at15 34 12 Pn"
+      style={{ width:"59%" }}
+    />
+  </Step>
+</Steps>
+
+<Check>
+  The integration is now successfully added and will be automatically used by Ravical AI agents when needed.
+</Check>
