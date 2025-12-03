@@ -22,7 +22,6 @@
           "technicalonboarding/technical-onboarding-overview",
           {
             "group": "Microsoft 365 Access",
-            "expanded": false,
             "pages": [
               "technicalonboarding/microsoft-365-email",
               "technicalonboarding/securitygroups",
@@ -85,10 +84,6 @@
         "pages": [
           "changelog/2025-09-04-inbox-agent-improvements"
         ]
-      },
-      {
-        "tab": "Blog",
-        "href": "https://ravical.com/"
       }
     ]
   },
