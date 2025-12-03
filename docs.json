@@ -82,14 +82,9 @@
       },
       {
         "tab": "Changelog",
-        "groups": [
-          {
-            "group": "Recent Updates",
-            "pages": [
+          "pages": [
               "changelog/2025-09-04-inbox-agent-improvements"
             ]
-          }
-        ]
       },
       {
         "tab": "Security",
