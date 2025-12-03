@@ -11,78 +11,92 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
-        "pages": [
-          "gettingstarted/welcome"
-        ]
-      },
-      {
-        "tab": "Technical Onboarding",
-        "pages": [
-          "technicalonboarding/technical-onboarding-overview",
+        "tab": "Guides",
+        "groups": [
           {
-            "group": "Microsoft 365 Access",
+            "group": "Getting started",
+            "icon": "rocket",
             "pages": [
-              "technicalonboarding/microsoft-365-email",
-              "technicalonboarding/securitygroups",
-              "technicalonboarding/outlook-addin"
+              "gettingstarted/welcome"
             ]
           },
-          "technicalonboarding/extrausers",
-          "technicalonboarding/whitelisteddomains"
-        ]
-      },
-      {
-        "tab": "Tool Connections",
-        "pages": [
-          "connections/connections-general",
           {
-            "group": "Connections: Tools",
-            "expanded": false,
+            "group": "Technical Onboarding",
+            "icon": "gear",
             "pages": [
-              "connections/accountview",
-              "connections/adminconsult",
-              "connections/adminpulse",
-              "connections/adsolut",
-              "connections/afas",
-              "connections/alure",
-              "connections/brio",
-              "connections/brokercloud",
-              "connections/exactonline",
-              "connections/expertm",
-              "connections/kbo",
-              "connections/sharepoint",
-              "connections/silverfin",
-              "connections/taxwin",
-              "connections/xero",
-              "connections/yuki"
+              "technicalonboarding/technical-onboarding-overview",
+              {
+                "group": "Microsoft 365 Access",
+                "pages": [
+                  "technicalonboarding/microsoft-365-email",
+                  "technicalonboarding/securitygroups",
+                  "technicalonboarding/outlook-addin"
+                ]
+              },
+              "technicalonboarding/extrausers",
+              "technicalonboarding/whitelisteddomains"
+            ]
+          },
+          {
+            "group": "Tool Connections",
+            "icon": "link",
+            "pages": [
+              "connections/connections-general",
+              {
+                "group": "Connections: Tools",
+                "pages": [
+                  "connections/accountview",
+                  "connections/adminconsult",
+                  "connections/adminpulse",
+                  "connections/adsolut",
+                  "connections/afas",
+                  "connections/alure",
+                  "connections/brio",
+                  "connections/brokercloud",
+                  "connections/exactonline",
+                  "connections/expertm",
+                  "connections/kbo",
+                  "connections/sharepoint",
+                  "connections/silverfin",
+                  "connections/taxwin",
+                  "connections/xero",
+                  "connections/yuki"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Inbox Agent",
+            "icon": "inbox",
+            "pages": [
+              "inboxagent/inbox_quickstart",
+              "inboxagent/inbox_what",
+              "inboxagent/inbox_how",
+              "inboxagent/inbox_sources",
+              "inboxagent/inbox_toneofvoice",
+              "inboxagent/inbox_learning",
+              "inboxagent/inbox_triage",
+              "inboxagent/inbox_otherai"
+            ]
+          },
+          {
+            "group": "Security",
+            "icon": "shield-check",
+            "pages": [
+              "technicalonboarding/security"
             ]
           }
         ]
       },
       {
-        "tab": "Inbox Agent",
-        "pages": [
-          "inboxagent/inbox_quickstart",
-          "inboxagent/inbox_what",
-          "inboxagent/inbox_how",
-          "inboxagent/inbox_sources",
-          "inboxagent/inbox_toneofvoice",
-          "inboxagent/inbox_learning",
-          "inboxagent/inbox_triage",
-          "inboxagent/inbox_otherai"
-        ]
-      },
-      {
-        "tab": "Security",
-        "pages": [
-          "technicalonboarding/security"
-        ]
-      },
-      {
         "tab": "Changelog",
-        "pages": [
-          "changelog/2025-09-04-inbox-agent-improvements"
+        "groups": [
+          {
+            "group": "Recent Updates",
+            "pages": [
+              "changelog/2025-09-04-inbox-agent-improvements"
+            ]
+          }
         ]
       }
     ]
