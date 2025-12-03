@@ -106,18 +106,19 @@
     "dark": "/logo/PRIMARY_LOGO__SCREENNeoAqua_Transparent.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@ravical.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
+  "links": [
+    {
+      "label": "Support",
+      "icon": "comment-question",
+      "href": "mailto:support@ravical.com"
+    },
+    {
       "label": "Blog",
+      "icon": "blog",
       "href": "https://blog.ravical.com/"
     }
-  },
+  ]
+},
   "footer": {
     "socials": {
       "linkedin": "https://www.linkedin.com/company/ravical"
