@@ -11,15 +11,14 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Getting Started",
+        "pages": [
+          "gettingstarted/welcome"
+        ]
+      },
+      {
         "tab": "Guides",
         "groups": [
-          {
-            "group": "Getting started",
-            "icon": "rocket",
-            "pages": [
-              "gettingstarted/welcome"
-            ]
-          },
           {
             "group": "Technical Onboarding",
             "icon": "gear",
@@ -78,13 +77,6 @@
               "inboxagent/inbox_triage",
               "inboxagent/inbox_otherai"
             ]
-          },
-          {
-            "group": "Security",
-            "icon": "shield-check",
-            "pages": [
-              "technicalonboarding/security"
-            ]
           }
         ]
       },
@@ -98,6 +90,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Security",
+        "pages": [
+          "technicalonboarding/security"
+        ]
       }
     ]
   },
@@ -106,19 +104,19 @@
     "dark": "/logo/PRIMARY_LOGO__SCREENNeoAqua_Transparent.png"
   },
   "navbar": {
-  "links": [
-    {
-      "label": "Support",
-      "icon": "comment-question",
-      "href": "mailto:support@ravical.com"
-    },
-    {
-      "label": "Blog",
-      "icon": "blog",
-      "href": "https://blog.ravical.com/"
-    }
-  ]
-},
+    "links": [
+      {
+        "label": "Support",
+        "icon": "comment-question",
+        "href": "mailto:support@ravical.com"
+      },
+      {
+        "label": "Blog",
+        "icon": "blog",
+        "href": "https://blog.ravical.com/"
+      }
+    ]
+  },
   "footer": {
     "socials": {
       "linkedin": "https://www.linkedin.com/company/ravical"
