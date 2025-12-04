@@ -107,9 +107,9 @@
         "href": "mailto:support@ravical.com"
       },
       {
-        "label": "Blog",
-        "icon": "blog",
-        "href": "https://blog.ravical.com/"
+        "label": "Status Page",
+        "icon": "signal",
+        "href": "https://status.ravical.com/"
       }
     ]
   },
