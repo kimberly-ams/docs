@@ -108,7 +108,7 @@
       },
       {
         "label": "Status Page",
-        "icon": "signal",
+        "icon": "heart-pulse",
         "href": "https://status.ravical.com/"
       }
     ]
