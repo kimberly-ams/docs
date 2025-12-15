@@ -1,0 +1,43 @@
+---
+title: "Windows File Server"
+description: "To connect your on-premises Windows File Server to Ravical, we use Azure File Sync. This solution automatically synchronizes files from your Windows Server to an Azure Storage File Share, allowing us to securely access your synchronized files directly through the official Microsoft SDK."
+---
+
+## How It Works
+
+1. Azure File Sync runs on your Windows Server and links a local folder to an Azure Storage File Share.
+2. The File Share resides in a Storage Account within your Azure tenant.
+3. You grant our Service Principal read-only permissions to only the File Shares we need.
+4. Our applications read the files via the Azure SDK, without shared keys, using modern OAuth security.
+
+## Setup: Who Does What
+
+### What Ravical Sets Up
+
+We register an Azure app and provide you with an **Application ID**. This is our identity for secure OAuth access.
+
+### What You Need to Set Up
+
+You'll need to configure the following in your Azure environment:
+
+1. **An Azure Storage File Share (SMB)** in your tenant.
+2. **Azure File Sync** on your Windows Server, connected to the File Share.
+3. **Cloud Tiering disabled** (if you don't want the local server to act as a cache).
+4. **Authentication via Managed Identity** where possible ([see Microsoft's guide](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-managed-identities?tabs=azure-portal)), so Shared Key Access on the Storage Account can be disabled.
+5. **A Service Principal** (based on our Application ID) with the role **"Storage File Data Privileged Reader"** assigned to the relevant File Shares. Read-only, limited to what we need.
+
+<Note>
+  Full setup tutorial from Microsoft: [Extend Windows Servers with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers)
+</Note>
+
+### Information We Need From You
+
+Once your setup is complete, please provide your Customer Value Manager with:
+
+- Your **Tenant ID**
+- The **Storage Account name**
+- The **File Share name(s)** you created
+
+## Questions?
+
+If you need assistance during setup or have questions about any step, please contact your Ravical Customer Value Manager.

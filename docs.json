@@ -24,7 +24,7 @@
             "group": "Technical Onboarding",
             "icon": "gear",
             "pages": [
-              "technicalonboarding/technical-onboarding-overview",
+              "technicalonboarding/overview",
               {
                 "group": "Microsoft 365 Access",
                 "pages": [
@@ -59,6 +59,7 @@
                   "connections/sharepoint",
                   "connections/silverfin",
                   "connections/taxwin",
+                  "connections/windows-file-server",
                   "connections/xero",
                   "connections/yuki"
                 ]
