@@ -28,7 +28,7 @@
               {
                 "group": "Microsoft 365 Access",
                 "pages": [
-                  "technicalonboarding/microsoft-365-email",
+                  "technicalonboarding/microsoft-tenant",
                   "technicalonboarding/securitygroups",
                   "technicalonboarding/outlook-addin"
                 ]

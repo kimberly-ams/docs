@@ -3,16 +3,12 @@ title: "Installing the Ravical Outlook Add-In"
 description: "This guide provides step-by-step instructions for IT administrators to deploy the Ravical Outlook Add-In across your organization. Once installed, the add-in allows users to access Ravical's agentic email assistant directly from Outlook."
 ---
 
-<Info>
-  **Note:** This guide reflects our early-stage configuration for pilot users. The process and required permissions may evolve as we continue to develop our system.
-</Info>
+<Note>
+  **Prerequisites: **before proceeding, ensure you have:
 
-### Prerequisites
-
-Before proceeding, ensure you have:
-
-- Microsoft 365 with SharePoint Online
-- Global Administrator access to your Microsoft 365 tenant
+  - Microsoft 365 with SharePoint Online.
+  - Global Administrator access to your Microsoft 365 tenant.
+</Note>
 
 ### Step-by-Step Deployment Instructions
 
@@ -20,54 +16,36 @@ Before proceeding, ensure you have:
   <Step title="Open the Microsoft Admin Center">
     Navigate to Add-Ins:
 
-    ```
     https://admin.microsoft.com/Adminportal/#/Settings/AddIns
-    ```
 
     Click **Deploy Add-In** → **Next**
 
     ![Screenshot2025 11 13at09 36 03 Pn](/images/Screenshot2025-11-13at09.36.03.png)
   </Step>
-  <Step title="Upload the Manifest File">
-    - Under **Deploy a custom add-in**, select **Upload custom apps**
-    - Choose: **I have a URL for the manifest file**
-    - Paste this URL:
+  <Step title="Deploy from the Store">
+    - Under the Deploy from Store option, select the **Choose from Store** button
+    - Look for the "**Ravical Inbox Agent**"
+    - Click **Add** 
 
-    ```
-    https://outlook-add-in.prod.ravical.com/manifest.prod.xml
-    ```
-
-    - Click **Upload**
-
-    ![Screenshot2025 11 13at09 36 43 Pn](/images/Screenshot2025-11-13at09.36.43.png)
+    ![Add In Store Pn](/images/Add-in-store.png)
   </Step>
   <Step title="Assign Users or Groups">
     - Choose who will have access to the add-in (specific groups, departments, or your entire organization)
+    - Choose the Deployment method for the add-in (Fixed, Available or Optional)
     - Click **Next**
 
+    <Tip>
+      We recommend using the combination of **"Specific users/groups"** and **"Fixed (Default)"**. 
+    </Tip>
     ![Screenshot2025 11 13at09 37 53 Pn](/images/Screenshot2025-11-13at09.37.53.png)
   </Step>
   <Step title="Review Permissions & Finish">
     - Carefully review the permissions the add-in requests. These permissions allow the add-in to interact with the user's mailbox and are required for full functionality.
     - Click **Save**
 
-    <Info>
-      **Note:** It may take 24–72 hours for the add-in to fully propagate.
-    </Info>
-  </Step>
-  <Step title="Grant Admin Consent">
-    This final step ensures the add-in is authorized to access required mailbox data.
-
-    - Visit this URL:
-
-    ```
-    https://login.microsoftonline.com/organizations/adminconsent?client_id=053b5d31-fbbd-43dc-a7b5-d22b701b5a08
-    ```
-
-    - Review the requested permissions
-    - Click **Accept**
-
-    ![Screenshot2025 11 13at09 38 51 Pn](/images/Screenshot2025-11-13at09.38.51.png)
+    <Warning>
+      **Note:** It may take **24–72 hours** for the add-in to fully propagate.
+    </Warning>
   </Step>
 </Steps>
 
@@ -75,6 +53,6 @@ Before proceeding, ensure you have:
 
 If users don't see the add-in after 72 hours, verify that:
 
-- The add-in was assigned to the correct users or groups
+- The add-in was assigned to the correct users or groups (**Step 3: Assign users or groups**)
 - Admin consent was successfully granted
 - Users have restarted Outlook or refreshed their browser
