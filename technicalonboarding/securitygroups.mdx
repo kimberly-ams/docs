@@ -7,15 +7,13 @@ description: "A critical step in setting up your MS365 environment for Ravical i
 
 Make sure that all steps provided in below article are completed before proceeding.
 
-<Card title="Microsoft Onboarding" icon="microsoft" color="#4523FF" horizontal href="technicalonboarding/microsoft-365-email">
+<Card title="Microsoft Onboarding" icon="microsoft" color="#4523FF" horizontal href="/technicalonboarding/microsoft-tenant">
   
 </Card>
 
 <Check>
   The security groups **ravical-mail-read** and **ravical-mail-readwrite** should already exist in your Microsoft tenant.
 </Check>
-
-![8 Done Pn](/images/8.Done.png)
 
 ### Adding Members to Security Groups
 
@@ -52,6 +50,6 @@ Make sure that all steps provided in below article are completed before proceedi
   </Step>
 </Steps>
 
-<Warning>
-  **Important Note:** Scoped access through nested groups is not supported by Exchange. You must add users as direct members to these security groups. Adding entire groups as members will not work correctly.
-</Warning>
+<Note>
+  **Important Note:** Scoped access through nested groups is not supported by Exchange. You must add users as **direct members** to these security groups. Adding entire groups as members will not work correctly.
+</Note>
